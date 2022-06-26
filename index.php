@@ -13,6 +13,10 @@
 </head>
 <body>
 
+
+
+
+
    <div class="recuadro">
     <h1>Login</h1>
     <form method="post">
@@ -27,13 +31,16 @@
         <label>Contraseña</label>
       </div>
       <input type="submit" value="Ingresar">
-      <div class="registrar"> Si no tenes cuenta <a href="registro.html">Registrate</a></div>
+      <div class="registrar"> Si no tenes cuenta <a href="registrate.php">Registrate</a></div>
       
 
     </form>
    </div>
 
-  
-
+   <?php
+      include("registro.php");
+    ?>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>     
+   
 </body>
 </html>

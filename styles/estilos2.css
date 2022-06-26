@@ -32,7 +32,15 @@ h1{
     box-sizing: border-box;
 }
 
-
+.recuadro_registro{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 28px;
+ }
  
  .recuadro_registro form{
      padding: 0 40px;
@@ -133,7 +141,7 @@ input[type="submit"]:hover{
 
 .recuadro_registro{
     position: absolute;
-    top:40%;
+    top:30%;
     left:50%;
     transform: translate(-50%, -50%);
     width: 400px;

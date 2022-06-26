@@ -16,29 +16,35 @@
     <h1>Registrate</h1>
     <form method="post">
       <div class="txt_campo">
-        <input type="text" required>
+        <input type="text" name="user" required>
         <span></span>
         <label>Tu Usuario</label>
       </div>
       <div class="txt_campo">
-        <input type="password" required>
+        <input type="password" name="pass" required>
         <span></span>
         <label>Tu Contraseña</label>
       </div>
       <div class="txt_campo">
-        <input type="text" required>
+        <input type="text" name="name" required>
         <span></span>
         <label>Tu Nombre</label>
       </div>
       <div class="txt_campo">
-        <input type="text" required>
+        <input type="text" name="surname" required>
         <span></span>
         <label>Tu Apellido</label>
       </div>
-      <input class="registro_boton" type="submit" value="Registrar">
+      <input class="registro_boton" name="registerbut" type="submit" value="Registrar" >
 
     </form>
    </div>
-  
+
+   <?php
+      include("registro.php");
+    ?>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>     
+     
 </body>
 </html>
