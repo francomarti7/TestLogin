@@ -16,7 +16,7 @@ if (isset($_POST['registerbut'])) {
 
             $verifica_usuario = mysqli_query($conex,"SELECT*FROM usuarios WHERE usuario='$user'");
 
-            if (mysqli_num_rows($verifica_usuario) > 0 );{
+            if (mysqli_num_rows($verifica_usuario) > 0 ){
                 echo '
                 <script>
                     alert("Usuario DUPLICADO intente nuevamente");
